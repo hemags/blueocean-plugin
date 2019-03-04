@@ -57,6 +57,17 @@ export const step = {
             'name': 'thisIsBool',
             'type': 'BooleanParameterDefinition',
         }, {
+            '_class': 'org.biouno.unochoice.CascadeChoiceParameter',
+            'defaultParameterValue': {
+                '_class': 'hudson.model.StringParameterValue',
+                'name': 'This is active choice',
+                'value': 'c1',
+            },
+            'description': 'this is active choice description',
+            'name': 'This is active choice',
+            'type': 'CascadeChoiceParameter',
+            'choices': ['c1', 'c2'],
+        },{
             '_class': 'hudson.model.ChoiceParameterDefinition',
             'defaultParameterValue': {
                 '_class': 'hudson.model.StringParameterValue',

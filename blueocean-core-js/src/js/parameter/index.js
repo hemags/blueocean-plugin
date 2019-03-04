@@ -4,7 +4,8 @@ import { Choice } from './components/Choice';
 import { String } from './components/String';
 import { Text } from './components/Text';
 import { Password } from './components/Password';
-export { Boolean, Choice, String, Text, Password };
+import { ActiveChoice } from './components/ActiveChoice';
+export { Boolean, Choice, String, Text, Password, ActiveChoice };
 // Renderer
 export { ParametersRender } from './renderer/ParametersRender';
 export { DebugRender } from './renderer/DebugRender';
@@ -15,7 +16,7 @@ import { ParameterApi } from './rest/ParameterApi';
 export { ParametersRunButton } from './ParametersRunButton';
 /**
  * all input types that we know of mapping against the component
- * @type {{BooleanParameterDefinition: Boolean, ChoiceParameterDefinition: Choice, TextParameterDefinition: String, StringParameterDefinition: Text, PasswordParameterDefinition: Password}}
+ * @type {{BooleanParameterDefinition: Boolean, ChoiceParameterDefinition: Choice, TextParameterDefinition: String, StringParameterDefinition: Text, PasswordParameterDefinition: Password, CascadeChoiceParameter: Choice}}
  */
 export const supportedInputTypesMapping = {
     BooleanParameterDefinition: Boolean,
@@ -23,6 +24,7 @@ export const supportedInputTypesMapping = {
     TextParameterDefinition: Text,
     StringParameterDefinition: String,
     PasswordParameterDefinition: Password,
+    CascadeChoiceParameter: Choice,     
 };
 /**
  * all input types that we know of
